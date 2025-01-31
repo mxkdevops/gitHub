@@ -1,11 +1,23 @@
 # gitHub
 # 1. Install the Required Tools
-### Check Git Version and Path
-Before starting, make sure you have the following installed:
 
+Before starting, make sure you have the following installed:
 Git: Download and install it from git-scm.com
 VS Code: Install it from code.visualstudio.com
 GitHub Account: Create one at github.com
+
+# 2. Set Up a Local Repository in Windows Using VS Code
+
+### Setup a Git Repository (Initialize)
+#### Open VS Code, go to Terminal → New Terminal, and run:
+
+```base
+git init
+
+```
+
+### Check Git Version and Path
+
 ```base
 git --version
 ```
@@ -16,13 +28,7 @@ where.exe git
 
 
  
-### Setup a Git Repository (Initialize)
-#### Open VS Code, go to Terminal → New Terminal, and run:
 
-```base
-git init
-
-```
 
 ### Tracking and Discarding Changes (Add)
 ### Saving Changes (Commit)
