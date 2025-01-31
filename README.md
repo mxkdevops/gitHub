@@ -71,6 +71,48 @@ git remote add origin https://github.com/mxkdevops/blue-bengal-website.git
 ```bash
 git remote -v
 ```
+###Push to github 
+```bash
+git push -u origin main
+```
+It will ask for your GitHub username and password.
+
+## Using SSH (More Secure)
+### Generate an SSH Key (If You Haven't Already)
+
+### Open Git Bash and run:
+```bash
+ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
+```
+Press Enter multiple times to accept the default location (C:\Users\YourName\.ssh\id_rsa).
+
+### Add the SSH Key to GitHub
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+### Go to GitHub → Settings → SSH and GPG keys → New SSH Key, then paste the key.
+### Test the SSH Connection
+
+```bash
+ssh -T git@github.com
+```
+### If successful, you’ll see:
+``
+Hi YourUsername! You've successfully authenticated.
+Connect and Push Using SSH
+``
+Add the remote repository using SSH:
+sh
+Copy
+Edit
+git remote add origin git@github.com:YourUsername/MyProject.git
+Push changes:
+sh
+Copy
+Edit
+git push -u origin main
+
 
 
 ### Saving Changes (Commit)
