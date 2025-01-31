@@ -59,7 +59,7 @@ git commit -m "Initial commit"
 ### Create a Repository on GitHub
 
 Go to GitHub, click New Repository, name it, and click Create.
-Copy the HTTPS link from GitHub (e.g., https://github.com/YourUsername/MyProject.git).
+Copy the HTTPS link from GitHub (e.g.,https://github.com/mxkdevops/blue-bengal-website.git)).
 
 ### Connect the Local Repository
 ####  Run the following command in the VS Code terminal
