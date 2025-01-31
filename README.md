@@ -100,23 +100,52 @@ ssh -T git@github.com
 ### If successful, you’ll see:
 ``
 Hi YourUsername! You've successfully authenticated.
-Connect and Push Using SSH
+
 ``
-Add the remote repository using SSH:
-sh
-Copy
-Edit
+
+### Connect and Push Using SSH
+#### Add the remote repository using SSH:
+```bash
 git remote add origin git@github.com:YourUsername/MyProject.git
-Push changes:
-sh
-Copy
-Edit
+```
+#### Push changes:
+```bash
 git push -u origin main
 
+```
+## Collaborating on GitHub
+If you want to work with a team, follow these steps:
+
+### Fork & Clone (For Contributors)
+### Fork the Repository
+### On GitHub, fork the project to your account.
+### Clone the Repository Locally
+### Copy the URL from your fork (HTTPS or SSH).
+```bash
+git clone https://github.com/YourUsername/MyProject.git
+```
+### B. Create a New Branch
+Always work on a separate branch before making changes:
+```bash
+git checkout -b feature-branch
+```
+### C. Make Changes and Push
+```bash 
+git add .
+git commit -m "Added a new feature"
+git push origin feature-branch
+
+```
 
 
-### Saving Changes (Commit)
-### Publish to GitHub 
-### Make Changes to Remote GitHub File (Commit & Push)
-### Sync Changes from GitHub to Local File (Pull)
-### Staging, i.e., Choosing Changes to Commit (Stage)
+## D. Create a Pull Request (PR)
+### Go to your GitHub repository.
+### Click Compare & pull request.
+### Describe your changes and click Create pull request.
+## E. Merge PR (For Repository Owners)
+The owner can review and merge the PR into the main branch.
+## 5. Syncing Changes
+If others make changes, pull updates to keep your local copy up to date:
+```bash
+git pull origin main
+```
