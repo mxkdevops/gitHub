@@ -46,19 +46,33 @@ git status
 ```
 ### Add all files to staging:
 ```bash
-git status
+git add .
 ```
-### Add all files to stagging 
 
-```bash
-git add 
-```
 ### Commit the changes:
 ```bash
 git commit -m "Initial commit"
 ```
 
-### Tracking and Discarding Changes (Add)
+## Push the Local Repository to GitHub
+###  A. Using HTTPS
+### Create a Repository on GitHub
+
+Go to GitHub, click New Repository, name it, and click Create.
+Copy the HTTPS link from GitHub (e.g., https://github.com/YourUsername/MyProject.git).
+
+### Connect the Local Repository
+####  Run the following command in the VS Code terminal
+```bash
+git remote add origin https://github.com/mxkdevops/blue-bengal-website.git
+
+```
+### Verify the repote URL
+```bash
+git remote -v
+```
+
+
 ### Saving Changes (Commit)
 ### Publish to GitHub 
 ### Make Changes to Remote GitHub File (Commit & Push)
