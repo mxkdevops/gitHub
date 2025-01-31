@@ -1,5 +1,11 @@
 # gitHub
+# 1. Install the Required Tools
 ### Check Git Version and Path
+Before starting, make sure you have the following installed:
+
+Git: Download and install it from git-scm.com
+VS Code: Install it from code.visualstudio.com
+GitHub Account: Create one at github.com
 ```base
 git --version
 ```
