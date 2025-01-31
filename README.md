@@ -30,8 +30,14 @@ git --version
 ```base
 where.exe git
 ```
+### Configure Git (First-Time Setup)
+#### Set your name and email (for commits):
 
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
 
+```
  
 
 
