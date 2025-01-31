@@ -8,13 +8,18 @@ GitHub Account: Create one at github.com
 
 # 2. Set Up a Local Repository in Windows Using VS Code
 
-### Setup a Git Repository (Initialize)
+#### Open VS Code
+### Initialize a Git Repository
+
+Open a folder where you want to store your project (e.g., C:\Users\YourName\Documents\MyProject).
+
 #### Open VS Code, go to Terminal → New Terminal, and run:
 
 ```base
 git init
 
 ```
+This initializes a local repository inside your folder.
 
 ### Check Git Version and Path
 
