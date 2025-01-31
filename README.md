@@ -11,6 +11,13 @@ where.exe git
 
  
 ### Setup a Git Repository (Initialize)
+#### Open VS Code, go to Terminal → New Terminal, and run:
+
+```base
+git init
+
+```
+
 ### Tracking and Discarding Changes (Add)
 ### Saving Changes (Commit)
 ### Publish to GitHub 
