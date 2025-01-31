@@ -34,12 +34,29 @@ where.exe git
 #### Set your name and email (for commits):
 
 ```bash
-git config --global user.name "Your Name"
-git config --global user.email "your-email@example.com"
+git config --global user.name "Mohammad"
+git config --global user.email "mxkdevops.com"
 
 ```
- 
+###  Create or Add Files
+Create a new file (e.g., index.html or README.md) inside your project folder.
+### Add and Commit Files
+```bash
+git status
+```
+### Add all files to staging:
+```bash
+git status
+```
+### Add all files to stagging 
 
+```bash
+git add 
+```
+### Commit the changes:
+```bash
+git commit -m "Initial commit"
+```
 
 ### Tracking and Discarding Changes (Add)
 ### Saving Changes (Commit)
