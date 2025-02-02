@@ -124,16 +124,27 @@ If you want to work with a team, follow these steps:
 ```bash
 git clone https://github.com/YourUsername/MyProject.git
 ```
-### B. Create a New Branch
-Always work on a separate branch before making changes:
+### Checking Existing branches
+Always work on a separate branch before making changes: Check Exisiting branches 
 ```bash
 git branch 
-main 
-another_branch 
-feature_inprogress_branch 
-git checkout feature_inprogress_branch
+```
+### Create new branches
+```bash
+https://www.atlassian.com/git/tutorials/using-branches/git-checkout
+git branch new_branch
+```
+### Switch to that new branch
+```bash
+git checkout <new-branch>
+git checkout that-branch
 git checkout -b feature-branch
 ```
+### Git checkout a remote branch
+```bash
+git fetch --all
+git checkout <remote-branch>
+
 ### C. Make Changes and Push
 ```bash 
 git add .
@@ -144,9 +155,8 @@ git push origin feature-branch
 
 
 ## D. Create a Pull Request (PR)
-### Go to your GitHub repository.
-### Click Compare & pull request.
-### Describe your changes and click Create pull request.
+ Go to your GitHub repository.Click Compare & pull request.
+ Describe your changes and click Create pull request.
 ## E. Merge PR (For Repository Owners)
 The owner can review and merge the PR into the main branch.
 ## 5. Syncing Changes
