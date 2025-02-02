@@ -127,6 +127,11 @@ git clone https://github.com/YourUsername/MyProject.git
 ### B. Create a New Branch
 Always work on a separate branch before making changes:
 ```bash
+git branch 
+main 
+another_branch 
+feature_inprogress_branch 
+git checkout feature_inprogress_branch
 git checkout -b feature-branch
 ```
 ### C. Make Changes and Push
