@@ -1,23 +1,27 @@
-# gitHub
-# 1. Install the Required Tools
+# GitHub Guide
+
+## 1. Install the Required Tools
 
 Before starting, make sure you have the following installed:
-Git: Download and install it from git-scm.com
-VS Code: Install it from code.visualstudio.com
-GitHub Account: Create one at github.com
 
-# 2. Set Up a Local Repository in Windows Using VS Code
+- **Git:** Download and install it from [git-scm.com](https://git-scm.com)
+- **VS Code:** Install it from [code.visualstudio.com](https://code.visualstudio.com)
+- **GitHub Account:** Create one at [github.com](https://github.com)
 
-#### Open VS Code
+---
+
+## 2. Set Up a Local Repository in Windows Using VS Code
+
+### Open VS Code
+
+Open a folder where you want to store your project (e.g., `C:\Users\YourName\Documents\MyProject`).
+
 ### Initialize a Git Repository
 
-Open a folder where you want to store your project (e.g., C:\Users\YourName\Documents\MyProject).
+Open VS Code, go to **Terminal → New Terminal**, and run:
 
-#### Open VS Code, go to Terminal → New Terminal, and run:
-
-```base
+```bash
 git init
-
 ```
 This initializes a local repository inside your folder.
 
