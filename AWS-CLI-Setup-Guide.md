@@ -75,40 +75,28 @@ cat ~/.aws/credentials
 cat ~/.aws/config
 Test a simple AWS CLI command:
 
-bash
-Copy
-Edit
 aws s3 ls
-8. Useful AWS CLI Commands to Get Started
+## 8. Useful AWS CLI Commands to Get Started
 List all S3 buckets:
 
-bash
-Copy
-Edit
 aws s3 ls
 Describe running EC2 instances:
 
-bash
-Copy
-Edit
 aws ec2 describe-instances --filters Name=instance-state-name,Values=running
 List IAM users:
 
-bash
-Copy
-Edit
 aws iam list-users
-9. Automate AWS CLI Commands
+## 9. Automate AWS CLI Commands
 You can create Bash or PowerShell scripts to automate repetitive AWS tasks, e.g., starting/stopping instances, uploading files to S3, or checking billing.
 
-10. Troubleshooting
+## 10. Troubleshooting
 If aws command not found, ensure your PATH includes the AWS CLI installation directory.
 
 Update AWS CLI to the latest version regularly.
 
 Check AWS CLI documentation: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 
-11. Additional Resources
+## 11. Additional Resources
 AWS CLI Official Docs: https://docs.aws.amazon.com/cli/
 
 AWS IAM User Guide: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
