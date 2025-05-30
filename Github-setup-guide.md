@@ -42,7 +42,7 @@ git config --global user.name "Mohammad"
 git config --global user.email "mxkdevops.com"
 
 ```
-###  Create or Add Files
+## 3. Create or Add Files
 Create a new file (e.g., index.html or README.md) inside your project folder.
 ### Add and Commit Files
 ```bash
@@ -58,7 +58,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
-## Push the Local Repository to GitHub
+## 4. Push the Local Repository to GitHub
 ###  A. Using HTTPS
 ### Create a Repository on GitHub
 
@@ -117,13 +117,14 @@ git remote add origin git@github.com:YourUsername/MyProject.git
 git push -u origin main
 
 ```
-## Collaborating on GitHub
+## 5. Collaborating on GitHub
 If you want to work with a team, follow these steps:
 
 ### Fork & Clone (For Contributors)
 ### Fork the Repository
 ### On GitHub, fork the project to your account.
 ### Clone the Repository Locally
+
 ### Copy the URL from your fork (HTTPS or SSH).
 ```bash
 git clone https://github.com/YourUsername/MyProject.git
@@ -163,7 +164,7 @@ git push origin feature-branch
  Describe your changes and click Create pull request.
 ## E. Merge PR (For Repository Owners)
 The owner can review and merge the PR into the main branch.
-## 5. Syncing Changes
+## 6. Syncing Changes
 If others make changes, pull updates to keep your local copy up to date:
 ```bash
 git pull origin main
