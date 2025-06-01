@@ -16,7 +16,11 @@
 
 ## Project 
 
-1. [S3 Lifecycle Checker](https://github.com/mxkdevops/portfolio-mo)
+1. [S3 Lifecycle Checker](https://github.com/mxkdevops/s3_lifecycle_checker))
+2. [CLI-based rootkit and anomaly scanner for Linux systems.](https://github.com/mxkdevops/mkrootkitscan)
+3. [Deploy WordPress on EC2 (Manual Setup)](https://github.com/mxkdevops/wordpress-on-ec2)
+4. [Deploy WordPress on EC2 with IAM and VPC automate](https://github.com/mxkdevops/Week_4_IAM_VPC_EC2/tree/main)
+5. [Streamlit app that simulates your own ChatGPT, powered by OpenAI's API](https://github.com/mxkdevops/chatgpt_streamlit_app)
 
 
 ## Client Project 
