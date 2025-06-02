@@ -20,14 +20,20 @@
 3. [portfolio.MKCloudAI.com Full deployment S3, CloudFront, ASM, Cloud53 ](https://github.com/mxkdevops/portfolio-mo)
 
 ## Project 
-
+### S3
 1. [S3 Lifecycle Checker](https://github.com/mxkdevops/s3_lifecycle_checker))
-2. [CLI-based rootkit and anomaly scanner for Linux systems.](https://github.com/mxkdevops/mkrootkitscan)
+### AWS
 3. [Deploy WordPress on EC2 (Manual Setup)](https://github.com/mxkdevops/wordpress-on-ec2)
 4. [Deploy WordPress on EC2 with IAM and VPC automate](https://github.com/mxkdevops/Week_4_IAM_VPC_EC2/tree/main)
-5. [Streamlit app that simulates your own ChatGPT, powered by OpenAI's API](https://github.com/mxkdevops/chatgpt_streamlit_app)
-6. [Linux Security Audit Scanner (mkauditscan)](https://github.com/mxkdevops/mkauditscan)
 
+
+### Linux Security
+[Linux Security Audit Scanner (mkauditscan)](https://github.com/mxkdevops/mkauditscan)
+
+[CLI-based rootkit and anomaly scanner for Linux systems.](https://github.com/mxkdevops/mkrootkitscan)
+
+### AI integration
+[Streamlit app that simulates your own ChatGPT, powered by OpenAI's API](https://github.com/mxkdevops/chatgpt_streamlit_app)
 
 ## Client Project 
 1. [agilesynergyltd.com , S3 Static Website Hosting](https://github.com/mxkdevops/brainyBench)
