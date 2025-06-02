@@ -83,3 +83,18 @@ echo -e "\n✅ Security check complete. Please review the output for any suspici
 
 
 ```
+## ▶️ How to Use:
+Save the script:
+```bash
+nano run-security-check.sh
+```
+Paste the code above, then save and exit.
+
+Make it executable:
+```
+chmod +x run-security-check.sh
+```
+Run it:
+```bash
+./run-security-check.sh
+```
