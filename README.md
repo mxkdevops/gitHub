@@ -23,6 +23,7 @@
 3. [Deploy WordPress on EC2 (Manual Setup)](https://github.com/mxkdevops/wordpress-on-ec2)
 4. [Deploy WordPress on EC2 with IAM and VPC automate](https://github.com/mxkdevops/Week_4_IAM_VPC_EC2/tree/main)
 5. [Streamlit app that simulates your own ChatGPT, powered by OpenAI's API](https://github.com/mxkdevops/chatgpt_streamlit_app)
+6. [Linux Security Audit Scanner (mkauditscan)](https://github.com/mxkdevops/mkauditscan)
 
 
 ## Client Project 
