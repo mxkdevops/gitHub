@@ -1,74 +1,110 @@
 ### 🧠 Top 20 Daily Tasks for a System Admin / Engineer (Technical List)
 #### 🔧 1. Check System Health
+```bash
 uptime
 top or htop
 vmstat 1 5
+```
 #### 🧠 2. Monitor Disk Usage
+```bash
 df -h
 du -sh /var/*
+```
 #### 🧩 3. Check Running Services
+```bash
 systemctl status
 systemctl list-units --type=service
+```
 #### 🔐 4. Review SSH Logins & Failed Attempts
+```bash
 last -a
 sudo journalctl -u ssh
+
 sudo cat /var/log/auth.log | grep 'Failed'
+```
 #### 📦 5. Check for Package Updates
+```bash
 sudo apt update && apt list --upgradable
+```
 #### 📋 6. Monitor System Logs
+```bash
 sudo journalctl -xe
 sudo tail -f /var/log/syslog
 sudo tail -f /var/log/messages
+```
 #### 💥 7. Analyze System Errors
+```bash
 dmesg | less
 sudo cat /var/log/kern.log
+```
 #### 🚀 8. Monitor System Performance
+```bash
 top, htop
 iotop
 free -m
+```
 #### 🌐 9. Check Network Status
+```bash
 ip a
 ss -tulnp
 ping 8.8.8.8
+```
 #### 🛡️ 10. Verify Firewall Rules
+```bash
 sudo ufw status
 iptables -L -n -v
+```
 #### 📊 11. Check Disk I/O and Performance Bottlenecks
+```bash
 iostat
 iotop
+```
 #### 📁 12. Monitor File System Changes (Security & Integrity)
+```bash
 auditd, inotify-tools, or AIDE
+```
 #### 🛠️ 13. Manage User Accounts & Access
+```bash
 sudo useradd / usermod / userdel
 sudo passwd
 groups username
+```
 #### 🔐 14. Rotate and Backup Logs
-
+```bash
 logrotate
 tar / rsync / scp for backups
+```
 #### ☁️ 15. Monitor Cloud Resources (AWS CLI / Azure CLI)
-
+```bash
 aws ec2 describe-instances
 aws s3 ls
 aws cloudwatch get-metric-data
+```
 #### 📡 16. Check Scheduled Jobs
+```bash
 crontab -l
 ls -la /etc/cron*
+```
 #### 📌 17. Apply Security Patches
-
+```bash
 sudo apt upgrade --with-new-pkgs
 unattended-upgrades (automated)
+```
 #### 🛠️ 18. Restart or Reload Services
-
+```bash
 sudo systemctl restart nginx
 sudo systemctl reload sshd
+```
 #### 🧾 19. Review Configuration Changes (Git or Diff Tools)
+```bash
 diff /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
 git diff (if infra tracked)
+```
 #### 🔁 20. Test Automated Scripts or Backups
+```bash
 bash /scripts/daily-backup.sh
 systemctl status backup.timer
-
+```
 
 ## 🛡️ 1. Check for Suspicious Hidden Files
 Hidden files start with a . — but we’ll look for anything unusual outside the normal patterns.
