@@ -1,5 +1,5 @@
 ## Daily System administration 
-[Daily system admin task] (https://github.com/mxkdevops/gitHub/blob/main/daily-system-admin.md)
+[Daily system admin task](https://github.com/mxkdevops/gitHub/blob/main/daily-system-admin.md)
 
 ## Quick Set up Guide
 
