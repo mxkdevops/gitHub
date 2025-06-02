@@ -1,5 +1,5 @@
 AI + Automation Project Ideas (Expanded)
-✅ Already Listed (1–5)
+## ✅ Already Listed (1–5)
 (Recap from previous message)
 
 AI Cloud Resource Optimizer
@@ -12,7 +12,7 @@ Smart Compliance Tracker
 
 AI-Powered DevOps Assistant (CLI + Web)
 
-🚀 New Projects (6–25)
+## 🚀 New Projects (6–25)
 6. EC2 Cost Visualizer with Smart Alerts
 Goal: Track EC2 instance usage and cost trends.
 
@@ -141,6 +141,9 @@ Goal: After an outage, generate a full postmortem report.
 Input: Logs, alerts, metrics.
 
 AI: Summarizes what happened, why, and next steps.
+
+## AI Projects 26–50: Practical, Cloud-Friendly, Automation-Ready
+
 
 25. Server Inventory Manager (with AI Insights)
 Goal: Track servers, OS, roles, uptime, tags.
@@ -316,7 +319,7 @@ AI: Clustering + GPT insights
 
 Bonus: Suggest aliases and refactors
 
-🛡️🧠 Projects 51–60: Linux Security + AI + Dashboard + Trend-Focused
+## 🛡️🧠 Projects 51–60: Linux Security + AI + Dashboard + Trend-Focused
 51. Linux Security Event Dashboard
 Goal: Visualize login attempts, sudo usage, failed auth, etc.
 
