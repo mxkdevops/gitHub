@@ -22,9 +22,6 @@ AWS CLI (Command Line Interface) is a unified tool to manage AWS services from y
 2. Run the installer and follow the prompts.
 3. Verify installation:
 
-```bash
-aws --version
-```
 ### macOS
 Using Homebrew:
 ```bash
