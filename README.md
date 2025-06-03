@@ -19,7 +19,7 @@
 2. [Deploy WordPress on EC2 with IAM and VPC automate](https://github.com/mxkdevops/Week_4_IAM_VPC_EC2/tree/main)
 
 ### AWS Lightsail
-1. [Web based System admin Dashboard] (https://github.com/mxkdevops/sysadmin_dashboard)
+1. [Web based System admin Dashboard](https://github.com/mxkdevops/sysadmin_dashboard)
 ### S3
 1. [S3 Lifecycle Checker](https://github.com/mxkdevops/s3_lifecycle_checker))
 
