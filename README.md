@@ -6,6 +6,7 @@
 ## Quick Set up Guide
 
 1.[Github-setup-guide](https://github.com/mxkdevops/gitHub/blob/main/Github-setup-guide.md)
+
 2.[Python local env setup](https://github.com/mxkdevops/gitHub/blob/main/local-env-setup.md)
 
 2.[Chocolaty Installation Guide](https://github.com/mxkdevops/gitHub/blob/main/chocolaty-installation-guide.md)
