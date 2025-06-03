@@ -1,4 +1,12 @@
 ### 🧠 Top 20 Daily Tasks for a System Admin / Engineer (Technical List)
+### Code of the Day 
+Edit /etc/ssh/sshd_config and change: port 2222 # sudo nano /etc/ssh/sshd_config
+Disable password authentication :PasswordAuthentication no
+No Root login : PermitRootLogin no
+sudo systemctl restart sshd
+
+
+
 #### 🔧 1. Check System Health
 ```bash
 uptime
