@@ -42,5 +42,6 @@ pip freeze > requirements.txt
 Now you can recreate the environment later:
 
 python -m venv venv
-.\venv\Scripts\activate
+.\venv\Scripts\activate    # Windows
+source venv/bin/activate   # Linux/macOS
 pip install -r requirements.txt
