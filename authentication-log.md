@@ -22,6 +22,8 @@ grep -iE "Accepted|Failed|authentication failure" /var/log/auth.log | tail -n 10
 tail -n 10 /var/log/apache2/error.log | grep -iE "error|warn|fail
 
 #### Wordpress log 
+wp-log=/var/www/html/wp-content/debug.log
+tail -n 10 "$wp_log" | grep -iE "error|warn|notice "
 
-tail -n 10 "$wp_log" | grep -iE "error|warn|notice
+
 
