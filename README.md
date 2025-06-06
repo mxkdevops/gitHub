@@ -3,9 +3,11 @@
 python -m venv venv
 .\venv\Scripts\activate    # Windows
 ```
+Linux system 
+```bash
 source venv/bin/activate   # Linux/macOS
 pip install -r requirements.txt
-
+```
 
 ## Daily System administration 
 [Daily system admin task](https://github.com/mxkdevops/gitHub/blob/main/daily-system-admin.md)
