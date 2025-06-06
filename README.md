@@ -14,6 +14,8 @@ Install the code
 ```bash
 pip install -r requirements.txt
 ```
+### Templates
+[Project description templates](https://github.com/mxkdevops/gitHub/blob/main/project_description_template.md)
 
 ## Daily System administration 
 [Daily system admin task](https://github.com/mxkdevops/gitHub/blob/main/daily-system-admin.md)
