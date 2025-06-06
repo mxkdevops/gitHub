@@ -1,3 +1,45 @@
+#### 6th June 2025 12;14 pm 
+#### Create a Custom MOTD script 
+```bash
+sudo nano /etc/update-motd.d/99-custom
+sudo chmod +x /etc/update-motd.d/99-custom
+run-parts /etc/update-motd.d/
+```
+
+```bash
+#!/bin/bash
+
+echo ""
+echo "╔══════════════════════════════════════╗"
+echo "║   🚀 Welcome to MKCloudAI Server     ║"
+echo "╠══════════════════════════════════════╣"
+echo "║ 🔒 Secured Ubuntu Server - DevOps    ║"
+echo "║ 🕒 Uptime: $(uptime -p)              ║"
+echo "║ 💡 Tip: Keep your system updated!    ║"
+echo "╚══════════════════════════════════════╝"
+echo ""
+
+echo "🌐 Hostname: $(hostname)"
+echo "🕒 Uptime: $(uptime -p)"
+echo "💾 Disk Usage: $(df -h / | awk 'NR==2 {print $5 " used"}')"
+echo "🧠 Memory Usage: $(free -m | awk '/Mem:/ {printf("%.1f%% used\n", $3/$2*100)}')"
+echo ""
+
+```
+### 🧠 Final Goal:
+### Add the following to /etc/update-motd.d/99-custom:
+
+- 🚨 Alert if disk usage > 80%
+- ☁️ AWS EC2 instance metadata
+- 📅 Show any upcoming cron jobs (like daily/weekly tasks)
+
+
+
+
+
+
+
+
 ### 🧠 Top 20 Daily Tasks for a System Admin / Engineer (Technical List)
 ### Code of the Day 
 Edit /etc/ssh/sshd_config and change: port 2222 # 
