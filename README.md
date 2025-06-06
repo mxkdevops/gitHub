@@ -1,11 +1,17 @@
 ### Create Virtual environemnt
 ```bash
 python -m venv venv
+```
+Activate it 
+```bash
 .\venv\Scripts\activate    # Windows
 ```
 Linux system 
 ```bash
 source venv/bin/activate   # Linux/macOS
+```
+Install the code 
+```bash
 pip install -r requirements.txt
 ```
 
