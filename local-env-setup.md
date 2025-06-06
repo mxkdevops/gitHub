@@ -1,3 +1,11 @@
+### Create Virtual environemnt
+```bash
+python -m venv venv
+.\venv\Scripts\activate    # Windows
+```
+source venv/bin/activate   # Linux/macOS
+pip install -r requirements.txt
+
 ## 👨‍💻 Standard Developer Workflow (per project)
 Let’s say you're working on:
 
@@ -41,7 +49,4 @@ Save your project dependencies:
 pip freeze > requirements.txt
 Now you can recreate the environment later:
 
-python -m venv venv
-.\venv\Scripts\activate    # Windows
-source venv/bin/activate   # Linux/macOS
-pip install -r requirements.txt
+
