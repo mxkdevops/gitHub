@@ -1,4 +1,7 @@
 #### 6th June 2025 12;14 pm 
+```bash
+sudo ufw deny from 167.71.46.247
+```
 #### Create a Custom MOTD script 
 ```bash
 sudo nano /etc/update-motd.d/99-custom
