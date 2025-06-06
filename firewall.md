@@ -1,3 +1,9 @@
+
+### Blocking IP address
+```bash
+sudo ufw deny from 167.71.46.247
+```
+
 ## Best Practices for a Hardened SSH Setup (AWS/Linux)
 ```bash
 sudo nano rotate_ssh_port.sh
