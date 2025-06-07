@@ -50,6 +50,7 @@ pip install -r requirements.txt
 1.[Linux Security Audit Scanner (mkauditscan)](https://github.com/mxkdevops/mkauditscan)
 
 2.[CLI-based rootkit and anomaly scanner for Linux systems.](https://github.com/mxkdevops/mkrootkitscan)
+3.[UFW audit](https://github.com/mxkdevops/UFW-audit)
 
 ### AI integration
 1. [Streamlit app that simulates your own ChatGPT, powered by OpenAI's API](https://github.com/mxkdevops/chatgpt_streamlit_app)
