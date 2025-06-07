@@ -1,4 +1,10 @@
+### UFW command to open port 222
+```bash
+sudo ufw status numbered
+sudo ufw delete 2
 
+sudo ufw allow 2222/tcp
+```
 ### Blocking IP address
 ```bash
 sudo ufw deny from 167.71.46.247
