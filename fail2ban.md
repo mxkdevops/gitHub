@@ -3,6 +3,19 @@
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 sudo nano /etc/fail2ban/jail.local
 ```
+Reload fail2ban
+```bash
+sudo fail2ban-client reload
+sudo fail2ban-client status apache-badbots
+sudo systemctl restart fail2ban
+```
+You should now see it monitoring /var/log/apache2/access.log and ready to ban any IPs matching those bot user agents.
+```bash
+sudo tail -f /var/log/apache2/access.log
+sudo tail -n 50 /var/log/fail2ban.log
+```
+
+
 Full jail example:
 ```bash
 [apache-badbots]
@@ -35,7 +48,4 @@ You can simulate a bad bot by manually adding a fake line to the Apache access l
 ```bash
 echo '123.123.123.123 - - [08/Jun/2025:10:23:00 +0000] "GET / HTTP/1.1" 200 2326 "-" "Jorgee"' | 
 ```
-#### Check Fail 2 ban log 
-```bash
-sudo tail -n 50 /var/log/fail2ban.log
-```
+
