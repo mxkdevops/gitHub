@@ -38,10 +38,108 @@ Do I need root? Or can I be a user process?	Safer is non-root unless absolutely 
 ###  🧭 Summary — First Things to Think About
 When building a system-level app like a web server:
 
-First Think About	Why It Matters
-OS constraints	Permissions, ports, logs, filesystems
-Runtime mode	Daemon? CLI tool? Triggered by cron?
-Communication	API? Socket? Port? Shared file?
-Logging & error handling	Users will need to debug you
-Privileges & security	Drop root if possible
-File layout	Follow Linux Filesystem Hierarchy
+- First Think About	Why It Matters
+- OS constraints	Permissions, ports, logs, filesystems
+- Runtime mode	Daemon? CLI tool? Triggered by cron?
+- Communication	API? Socket? Port? Shared file?
+- Logging & error handling	Users will need to debug you
+- Privileges & security	Drop root if possible
+- File layout	Follow Linux Filesystem Hierarchy
+
+## 🧱 Levels of Applications in a Linux System
+### 1. 🧠 Kernel-Level (Ring 0)
+These run in the kernel space and have full control over the system.
+
+Type	Description	Examples
+Kernel Modules	Extend or add features to the kernel	nf_conntrack, device drivers
+System Calls	Interfaces for user apps to talk to kernel	read(), write(), fork()
+
+🔒 Must be safe, fast, and secure. Written in C.
+
+### 2. ⚙️ System-Level Applications (Ring 3, privileged)
+Run in user space, but interact heavily with system APIs or hardware.
+
+Type	Description	Examples
+Daemons	Background services that run as root or a system user	sshd, cron, systemd, apache2
+System Tools	CLI utilities that manage system resources	iptables, ls, top, journalctl
+Service Managers	Control services & boot sequence	systemd, init, rc.d
+
+📌 These apps usually:
+
+Start on boot
+
+Have config in /etc/
+
+Write logs to /var/log/
+
+Use system calls like bind(), open(), fork()
+
+### 3. 👤 User-Level Applications (Ring 3, unprivileged)
+Applications launched and used by end users.
+
+Type	Description	Examples
+Desktop apps	GUI or CLI tools	firefox, vim, nano, gnome-terminal
+Developer tools	Editors, compilers	code, gcc, gdb, make
+Services	Web servers, APIs	apache2, nginx, flask, node
+Scripts	Bash, Python, Perl scripts	Custom automation scripts
+
+### 🧰 These:
+
+May depend on system libraries (libc, libssl, etc.)
+
+Log to file or stdout
+
+Use kernel interfaces (via system calls)
+
+### 4. 🌐 Network-Level / Cloud Applications
+Applications that interact with remote systems or distributed platforms.
+
+Type	Description	Examples
+APIs	Web services	REST, GraphQL, gRPC APIs
+Microservices	Small independently deployable apps	booking-api, auth-service
+Containers	Isolated environments	Dockerized apps, Kubernetes pods
+Cloud Agents	Monitor/report to cloud platforms	amazon-ssm-agent, cloudwatch-agent
+
+💡 These may span across machines and talk over the network.
+
+### 5. 🤖 AI/Data Applications (Optional Newer Layer)
+Software designed to analyze, learn, or automate using data.
+
+Type	Description	Examples
+Data pipelines	Ingest, transform, store data	ETL scripts, Airflow DAGs
+AI agents	Make decisions, summarize, predict	Chatbots, LLM tools, AutoML agents
+Analyzers	Parse logs, detect anomalies	SIEM tools, custom log analyzers
+
+These often combine system-level log access with user-level AI libraries (like pandas, scikit-learn, or transformers).
+
+###  🔁 Relationship Between the Levels
+
++-------------------------+
+|   User-Level Apps       | ← run by users
++-------------------------+
+|   System-Level Daemons  | ← manage services, network, users
++-------------------------+
+|   Kernel System Calls   | ← used by above via libc
++-------------------------+
+|   Kernel Modules        | ← drivers, netfilter, etc.
++-------------------------+
+|   Hardware              | ← lowest level
+Each level builds on the one below it. For example:
+
+Apache (system-level app) uses sockets via system calls
+
+Those system calls are defined in the kernel
+
+The kernel may use kernel modules like ip_tables for firewall
+
+Everything ultimately runs on hardware
+
+## ✅ Summary Table
+Level	Key Character	Examples
+- Kernel-Level	Fast, low-level	ext4, tcp.c, syscalls
+- System-Level	Daemons, services	sshd, apache2, cron
+- User-Level	Apps & tools	curl, nano, firefox
+- Network-Level	Remote interaction	nginx, docker, api-server
+- AI/Data Apps	Logic & analysis	audit-analyzer, logbot.py
+
+
