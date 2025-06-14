@@ -1,12 +1,16 @@
 ## 🔧 STEP : Configure Jail for Apache
 ```bash
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+cat /etc/fail2ban/jail.local
 sudo nano /etc/fail2ban/jail.local
+
 ```
 Reload fail2ban
 ```bash
 sudo fail2ban-client reload
+sudo fail2ban-client status sshd
 sudo fail2ban-client status apache-badbots
+sudo fail2ban-client status recidive
 sudo systemctl restart fail2ban
 ```
 You should now see it monitoring /var/log/apache2/access.log and ready to ban any IPs matching those bot user agents.
