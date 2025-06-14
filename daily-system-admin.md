@@ -1,3 +1,12 @@
+
+### 14 th june 2025 at 07:50 am 
+
+
+
+
+
+
+
 #### 6th June 2025 12;14 pm 
 ```bash
 sudo ufw deny from 167.71.46.247
