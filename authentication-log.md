@@ -11,19 +11,19 @@ sudo grep "Accepted password" /var/log/auth.log
 
 
 ```
-# ✅ General System Issues
-grep -iE "error|fail|warn" /var/log/syslog | tail -n 10 2
+###  ✅ General System Issues
+### ✅ System Errors
+grep -iE "error|fail|warn" /var/log/syslog | tail -n 10
 
-# ✅ SSH Attempts
-grep -iE "Accepted|Failed|authentication failure" /var/log/auth.log | tail -n 10 2
+### ✅ SSH Attempts
+grep -iE "Accepted|Failed|authentication failure" /var/log/auth.log | tail -n 10
 
-### Apache errors
-
-tail -n 10 /var/log/apache2/error.log | grep -iE "error|warn|fail
+### ✅ Apache Errors
+grep -iE "error|warn|fail" /var/log/apache2/error.log | tail -n 10
 
 #### Wordpress log 
-wp-log=/var/www/html/wp-content/debug.log
-tail -n 10 "$wp_log" | grep -iE "error|warn|notice "
+wwp_log=/var/www/html/wp-content/debug.log
+tail -n 10 "$wp_log" | grep -iE "error|warn|notice"
 
 
 
