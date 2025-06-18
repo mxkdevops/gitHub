@@ -12,13 +12,13 @@ sudo grep "Accepted password" /var/log/auth.log
 
 ```
 ###  ✅ General System Issues
-### ✅ System Errors
+#### System Errors
 grep -iE "error|fail|warn" /var/log/syslog | tail -n 10
 
-### ✅ SSH Attempts
+####  SSH Attempts
 grep -iE "Accepted|Failed|authentication failure" /var/log/auth.log | tail -n 10
 
-### ✅ Apache Errors
+#### ✅ Apache Errors
 grep -iE "error|warn|fail" /var/log/apache2/error.log | tail -n 10
 
 #### Wordpress log 
