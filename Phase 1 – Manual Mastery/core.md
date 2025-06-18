@@ -1,7 +1,7 @@
 🧱 Core System Categories & Topics
 Category	Skills to Learn & Practice
-### Access & Users	SSH, users/groups, passwd, sudo, key-based login, chmod/chown
-### File System	Linux directory tree, ls, cp, mv, find, du, df, symlinks, mounting drives
+- Access & Users	SSH, users/groups, passwd, sudo, key-based login, chmod/chown
+- File System	Linux directory tree, ls, cp, mv, find, du, df, symlinks, mounting drives
 - Package Mgmt	apt, yum, dnf, snap, compiling from source
 - Processes & Services	ps, top, htop, systemctl, journalctl, start/stop/enable services
 - Networking	ip a, ping, netstat, ss, /etc/hosts, hostname, nmap, DNS lookup
