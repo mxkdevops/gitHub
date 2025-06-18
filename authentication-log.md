@@ -12,6 +12,7 @@ sudo grep "Accepted password" /var/log/auth.log
 
 ```
 ###  ✅ General System Issues
+```bash
 #### System Errors
 grep -iE "error|fail|warn" /var/log/syslog | tail -n 10
 
@@ -24,6 +25,6 @@ grep -iE "error|warn|fail" /var/log/apache2/error.log | tail -n 10
 #### Wordpress log 
 wwp_log=/var/www/html/wp-content/debug.log
 tail -n 10 "$wp_log" | grep -iE "error|warn|notice"
-
+```
 
 
