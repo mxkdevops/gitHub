@@ -1,4 +1,30 @@
+#### 20th June 
 
+```bash
+grep "WP_DEBUG already defined" /var/log/apache2/error.log
+grep "define('WP_DEBUG" /var/www/html/wp-config.php
+
+✅ Fix It Now
+Edit /var/www/html/wp-config.php and wrap each define like this:
+sudo nano /var/www/html/wp-config.php
+
+
+if (!defined('WP_DEBUG')) {
+    define('WP_DEBUG', true);
+}
+
+if (!defined('WP_DEBUG_LOG')) {
+    define('WP_DEBUG_LOG', true);
+}
+
+if (!defined('WP_DEBUG_DISPLAY')) {
+    define('WP_DEBUG_DISPLAY', false);
+}
+
+grep "define('WP_DEBUG" /var/www/html/wp-config.php
+sudo tail -f /var/log/apache2/error.log
+
+```
 
 
 
