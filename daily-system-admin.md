@@ -1,3 +1,31 @@
+# August 2025 – Daily Logbook
+
+## [2025-08-26] AWS CLI Setup
+Goal: Install AWS CLI and connect to AWS account.
+
+Steps:
+1. Download & install
+   ```bash
+   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   unzip awscliv2.zip
+   sudo ./aws/install
+   ```
+2. Configure
+   ```bash
+   aws configure
+   Region: eu-west-2
+   Output: json
+   ```
+3.Tested
+  ```bash
+aws s3 ls
+```
+✅ Lesson: Credentials stored in ~/.aws/credentials
+   
+
+
+
+
 #### 20th June 
 
 ```bash
