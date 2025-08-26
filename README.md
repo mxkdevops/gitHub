@@ -55,6 +55,9 @@ pip install -r requirements.txt
 ### AI integration
 1. [Streamlit app that simulates your own ChatGPT, powered by OpenAI's API](https://github.com/mxkdevops/chatgpt_streamlit_app)
 
+### Python Project 
+1. [Create Audit Action Tracker](https://github.com/mxkdevops/audit_action_tracker)
+
 ## Client Project 
 1. [agilesynergyltd.com , S3 Static Website Hosting](https://github.com/mxkdevops/brainyBench)
 2. [Blue bengal restaurant , S3, Cloudfront, SSL , Cloud53 ,  Static Website Hosting](https://github.com/mxkdevops/blue-bengal-website)
