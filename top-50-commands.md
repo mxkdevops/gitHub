@@ -23,14 +23,14 @@ sudo fail2ban-client status sshd
 
 ✅ 6. RUn 
 
-grep "define('WP_DEBUG" /var/www/html/wp-config.php
-🔍 7. Check Apache Error Log (Live)
+ grep "define('WP_DEBUG" /var/www/html/wp-config.php
+✅ 7. Check Apache Error Log (Live)
 sudo tail -f /var/log/apache2/error.log
 
-🔍 8. Search for Past WP_DEBUG Errors
+✅ 8. Search for Past WP_DEBUG Errors
 grep "WP_DEBUG already defined" /var/log/apache2/error.log
 
-📦 9. Bonus: Confirm no duplicate WP_DEBUG in config
+✅ 9. Bonus: Confirm no duplicate WP_DEBUG in config
 grep "define('WP_DEBUG" /var/www/html/wp-config.php
 ✅ 10. Check Disk Usage
 df -h
@@ -46,7 +46,7 @@ sudo systemctl status apache2
 journalctl -xe | grep apache2
 
 ✅ 15. Check MySQL/MariaDB (if using local DB)
-udo systemctl status mysql
+sudo systemctl status mysql
 
 ✅ 16 Test DB login:
 mysql -u wpuser -p
