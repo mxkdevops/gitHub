@@ -26,5 +26,13 @@ grep -iE "error|warn|fail" /var/log/apache2/error.log | tail -n 10
 wp_log=/var/www/html/wp-content/debug.log
 tail -n 10 "$wp_log" | grep -iE "error|warn|notice"
 ```
+# SSH password logins (rare if you use keys)
+sudo grep "Accepted password" /var/log/auth.log
+
+# SSH key logins (most common in hardened setups)
+sudo grep "Accepted publickey" /var/log/auth.log
+
+# PAM session opened (covers ssh + sudo + su)
+sudo grep "session opened" /var/log/auth.log
 
 
